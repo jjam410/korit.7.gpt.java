@@ -1,5 +1,6 @@
 package com.korit.main;
 
+
 import com.korit.util.ForEachPrinter2;
 
 import java.util.ArrayList;
@@ -13,11 +14,12 @@ public class Main3 {
         return 10 % 2 == 0;
     }
 
-
     public static void main(String[] args) {
         String[] names = new String[] {"a", "b", "c"};
         Integer[] numbers = new Integer[] {1, 2, 3};
-        List<String> datas = ForEachPrinter2.print(Arrays.asList(names), data -> System.out.println(data));
+
+        ForEachPrinter2.print(new ArrayList<String>(), (data) -> System.out.println(data));
+
 
         List<Integer> list = List.of(1,2,3,4,5);
         List<Integer> list2 = new ArrayList<>();
@@ -25,5 +27,6 @@ public class Main3 {
         list2.add(10);
         List<Integer> list3 = list.stream().collect(Collectors.toList());
         list3.add(20);
+
     }
 }

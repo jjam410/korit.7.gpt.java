@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserRepository {
-
-    private List<User> userList;
     private static UserRepository instance;
-    public UserRepository() {
+    private List<User> userList;
+
+    private UserRepository() {
         userList = new ArrayList<>();
     }
 
@@ -20,8 +20,8 @@ public class UserRepository {
         return instance;
     }
 
-
     public void addUser(User user) {
-
+        userList.add(user);
     }
+
 }

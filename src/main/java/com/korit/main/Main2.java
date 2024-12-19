@@ -1,8 +1,31 @@
 package com.korit.main;
 
-public class Main2 {
-    Integer[] num1 = new Integer[] {1,2,3,4,5,6,7,8,9};
-    Integer[] num2 = new Integer[] {11,12,13,14,15,16,17,18,19};
-    Integer[] num3= new Integer[] {111,112,113,114,115,116,117,118,119};
+import com.korit.service.ATestService;
+import com.korit.service.BTestService;
+import com.korit.service.TestPrint;
+
+import java.util.Random;
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        TestPrint testPrint = null;
+
+        ATestService aTestService = new ATestService();
+        BTestService bTestService = new BTestService();
+
+        Random random = new Random();
+        int randomInt = random.nextInt(100);
+
+        if(randomInt % 2 == 0){
+            testPrint = aTestService;
+        }else {
+            testPrint = bTestService;
+        }
+
+
+        testPrint.print();
+
+    }
 
 }

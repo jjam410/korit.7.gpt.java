@@ -7,6 +7,7 @@ import com.korit.service.TestPrint;
 import java.util.Random;
 
 public class Main1 {
+
     public static void main(String[] args) {
         TestPrint testPrint = null;
 
@@ -16,10 +17,15 @@ public class Main1 {
         Random random = new Random();
         int randomInt = random.nextInt(100);
 
-        if (randomInt % 2 == 0) {
+        if(randomInt % 2 == 0){
             testPrint = aTestService;
-        } else testPrint = bTestService;
+        }else {
+            testPrint = bTestService;
+        }
+
 
         testPrint.print();
+
     }
+
 }

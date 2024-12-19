@@ -3,10 +3,11 @@ package com.korit.service;
 import com.korit.entity.User;
 import com.korit.repository.UserRepository;
 
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl2 implements UserService {
     @Override
     public void add(User user) {
-        UserRepository.getInstance().addUser(user);
+        UserRepository userRepository = UserRepository.getInstance();
+        userRepository.addUser(user);
     }
 
     @Override
