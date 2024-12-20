@@ -1,6 +1,6 @@
 package com.korit.main;
 
-import com.korit.controller.UserController;
+import com.korit.Controller.UserController;
 import com.korit.service.UserServiceImpl;
 import com.korit.service.UserServiceImpl2;
 

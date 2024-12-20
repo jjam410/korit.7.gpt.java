@@ -1,4 +1,4 @@
-package com.korit.controller;
+package com.korit.Controller;
 
 import com.korit.entity.User;
 import com.korit.repository.UserRepository;

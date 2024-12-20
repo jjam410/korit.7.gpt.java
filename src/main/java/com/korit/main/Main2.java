@@ -6,7 +6,7 @@ import com.korit.service.TestPrint;
 
 import java.util.Random;
 
-public class Main1 {
+public class Main2 {
 
     public static void main(String[] args) {
         TestPrint testPrint = null;
